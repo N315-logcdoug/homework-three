@@ -1,0 +1,98 @@
+.womenshealth-header-top {
+    @include main-header;
+    margin-top: 37px;
+    text-align: center;
+}
+
+.womenshealth-header {
+    @include main-header;
+    text-align: center;
+}
+
+.womenshealth-body {
+    width: 982px;
+    @include body-text;
+    margin-top: 9px;
+    text-align: center;
+}
+
+.womens-grid {
+    width: 982px;
+    min-height: 200px;
+    margin-top: 68px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 29px;
+    margin-bottom: 126px;
+
+    .womens-square {
+        width: 308px;
+        min-height: 382px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .womens-square-body {
+            @include body-text;
+            text-align: center;
+            width: 283px;
+            margin-top: 37px;
+        }
+
+        .womens-square-photo-1 {
+            @include small-img;
+            background-image: url(../images/toilet.jpg);
+            margin-bottom: 8px;
+        }
+
+        .womens-square-photo-2 {
+            @include small-img;
+            background-image: url(../images/toothbrush.jpg);
+            margin-bottom: 8px;
+        }
+
+        .womens-square-photo-3 {
+            @include small-img;
+            background-image: url(../images/hair2.jpg);
+            margin-bottom: 8px;
+        }
+
+        .womens-square-photo-4 {
+            @include small-img;
+            background-image: url(../images/shower.jpg);
+            margin-bottom: 8px;
+        }
+
+        .womens-square-photo-5 {
+            @include small-img;
+            background-image: url(../images/sickness.jpg);
+            margin-bottom: 8px;
+        }
+
+        .womens-square-photo-6 {
+            @include small-img;
+            background-image: url(../images/eye.jpg);
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 1126px){
+    .womenshealth-header-top {
+        width: 100%;
+    }
+
+    .womenshealth-header {
+        width: 100%;
+    }
+
+    .womenshealth-body {
+        width: 100%;
+    }
+
+    .womens-grid {
+        width: 100%;
+        justify-content: center;
+    }
+}

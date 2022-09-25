@@ -1,0 +1,66 @@
+.lifestyle-drs {
+    margin-bottom: 54px;
+    .dr-row {
+        width: 982px;
+        min-height: 200px;
+        display: flex;
+        margin-bottom: 46px;
+    
+        .lifestyle-dr-photo-1 {
+            @include round-img;
+            width: 255px;
+            height: 255px;
+            background-image: url(../images/dr1.jpg);
+        }
+    
+        .lifestyle-dr-photo-2 {
+            @include round-img;
+            width: 255px;
+            height: 255px;
+            background-image: url(../images/dr2.jpg);
+        }
+    
+        .lifestyle-dr-text {
+            margin-left: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            .lifestyle-dr-header {
+                font-family: 'Century Gothic';
+                font-size: 30px;
+                font-weight: bold;
+                color: $header-color;
+                margin-bottom: 12px;
+            }
+    
+            .lifestyle-dr-body {
+                @include body-text;
+                width: 548px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1126px){
+    .lifestyle-drs {
+        width: 100%;
+        .dr-row {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+
+            .lifestyle-dr-text {
+                margin: 0;
+
+                .lifestyle-dr-header{
+                    text-align: center;
+                }
+    
+                .lifestyle-dr-body{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

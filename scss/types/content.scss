@@ -1,0 +1,100 @@
+.types-header {
+    margin-top: 37px;
+    @include main-header;
+    text-align: center;
+}
+
+.type-grid {
+    width: 982px;
+    min-height: 200px;
+    margin-top: 68px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 29px;
+    margin-bottom: 126px;
+
+    .type-square {
+        width: 308px;
+        height: 382px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .square-header {
+            font-family: 'Century Gothic';
+            font-size: 30px;
+            font-weight: bold;
+            color: $header-color;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .square-body {
+            @include body-text;
+            text-align: center;
+            width: 283px;
+        }
+
+        .square-photo-1 {
+            @include small-img;
+            background-image: url(../images/toilet.jpg);
+            margin-bottom: 8px;
+        }
+
+        .square-photo-2 {
+            @include small-img;
+            background-image: url(../images/toothbrush.jpg);
+            margin-bottom: 8px;
+        }
+
+        .square-photo-3 {
+            @include small-img;
+            background-image: url(../images/hair.jpg);
+            margin-bottom: 8px;
+        }
+
+        .square-photo-4 {
+            @include small-img;
+            background-image: url(../images/shower.jpg);
+            margin-bottom: 8px;
+        }
+
+        .square-photo-5 {
+            @include small-img;
+            background-image: url(../images/sickness.jpg);
+            margin-bottom: 8px;
+        }
+
+        .square-photo-6 {
+            @include small-img;
+            background-image: url(../images/eye.jpg);
+            margin-bottom: 8px;
+        }
+
+        .square-photo-7 {
+            @include small-img;
+            background-image: url(../images/nail.png);
+            margin-bottom: 8px;
+        }
+
+        .square-photo-8 {
+            @include small-img;
+            background-image: url(../images/Handwashing.jpg);
+            margin-bottom: 8px;
+        }
+
+        .square-photo-9 {
+            @include small-img;
+            background-image: url(../images/feet.jpg);
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 1126px){
+    .type-grid {
+        width: 100%;
+        justify-content: center;
+    }
+}

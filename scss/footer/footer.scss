@@ -1,0 +1,21 @@
+footer {
+    width: $content-width;
+    height: 207px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Century Gothic';
+    color: $footer-color;
+    font-size: 15px;
+    border-top: 1px solid $footer-color;
+
+    .footer-address {
+        width: 204px;
+        text-align: center;
+    }
+
+    .footer-copyright {
+        margin-top: 25px;
+    }
+}

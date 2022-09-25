@@ -1,0 +1,4 @@
+.types-hero {
+    @include hero-img;
+    background-image: url(../images/general.jpg);
+}

@@ -1,0 +1,36 @@
+@mixin hero-img {
+    width: $content-width;
+    height: 318px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin main-header {
+    font-family: 'Gill Sans';
+    font-weight: bold;
+    font-style: italic;
+    color: $header-color;
+    font-size: 40px;
+}
+
+@mixin body-text {
+    font-family: 'Century Gothic';
+    color: $body-color;
+    font-size: 20px;
+}
+
+@mixin round-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+
+@mixin small-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 308px;
+    height: 224px;
+}

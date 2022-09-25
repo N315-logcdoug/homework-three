@@ -1,0 +1,760 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 144px;
+  padding-right: 144px;
+}
+
+#app {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1440px) {
+  #page {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 112px;
+  display: flex;
+  border-bottom: 1px solid #BD78E0;
+}
+nav .nav-home {
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-style: italic;
+  color: #3366FF;
+  font-size: 40px;
+  margin-top: 47px;
+}
+nav .nav-others {
+  font-family: "Century Gothic";
+  font-size: 20px;
+  margin-top: 63px;
+}
+nav .nav-others a {
+  margin-left: 68px;
+  color: #3366FF;
+}
+
+@media screen and (max-width: 1300px) {
+  nav .nav-others a {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  nav .nav-home {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 170px;
+  }
+}
+@media screen and (max-width: 920px) {
+  nav .nav-others {
+    font-size: 15px;
+  }
+}
+.home-hero {
+  width: 100%;
+  height: 318px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/Handwashing.jpg);
+}
+
+.home-header {
+  margin-top: 37px;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-style: italic;
+  color: #3366FF;
+  font-size: 40px;
+  text-align: center;
+}
+
+.home-body {
+  width: 982px;
+  font-family: "Century Gothic";
+  color: #2996EA;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1126px) {
+  .home-body {
+    width: 100%;
+  }
+}
+.drs {
+  width: 982px;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 76px;
+  margin-bottom: 87px;
+}
+.drs .dr {
+  width: 288px;
+  min-height: 481px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drs .dr .dr-photo-1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  background-image: url(../images/dr1.jpg);
+  width: 288px;
+  height: 288px;
+}
+.drs .dr .dr-photo-2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  background-image: url(../images/dr2.jpg);
+  width: 288px;
+  height: 288px;
+}
+.drs .dr .dr-photo-3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  background-image: url(../images/dr3.jpg);
+  width: 288px;
+  height: 288px;
+}
+.drs .dr .dr-name {
+  font-family: "Century Gothic";
+  font-size: 25px;
+  font-weight: bold;
+  color: #3366FF;
+  margin-top: 21px;
+}
+.drs .dr .dr-email {
+  font-family: "Century Gothic";
+  color: #2996EA;
+  font-size: 20px;
+  color: #3366FF;
+  font-size: 21px;
+}
+.drs .dr .dr-quote {
+  font-family: "Century Gothic";
+  color: #2996EA;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 21px;
+}
+
+@media screen and (max-width: 1126px) {
+  .drs {
+    flex-direction: column;
+    width: 288px;
+  }
+  .drs .dr {
+    margin-bottom: 50px;
+  }
+}
+.types-hero {
+  width: 100%;
+  height: 318px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/general.jpg);
+}
+
+.types-header {
+  margin-top: 37px;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-style: italic;
+  color: #3366FF;
+  font-size: 40px;
+  text-align: center;
+}
+
+.type-grid {
+  width: 982px;
+  min-height: 200px;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 29px;
+  margin-bottom: 126px;
+}
+.type-grid .type-square {
+  width: 308px;
+  height: 382px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.type-grid .type-square .square-header {
+  font-family: "Century Gothic";
+  font-size: 30px;
+  font-weight: bold;
+  color: #3366FF;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.type-grid .type-square .square-body {
+  font-family: "Century Gothic";
+  color: #2996EA;
+  font-size: 20px;
+  text-align: center;
+  width: 283px;
+}
+.type-grid .type-square .square-photo-1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/toilet.jpg);
+  margin-bottom: 8px;
+}
+.type-grid .type-square .square-photo-2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/toothbrush.jpg);
+  margin-bottom: 8px;
+}
+.type-grid .type-square .square-photo-3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/hair.jpg);
+  margin-bottom: 8px;
+}
+.type-grid .type-square .square-photo-4 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/shower.jpg);
+  margin-bottom: 8px;
+}
+.type-grid .type-square .square-photo-5 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/sickness.jpg);
+  margin-bottom: 8px;
+}
+.type-grid .type-square .square-photo-6 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/eye.jpg);
+  margin-bottom: 8px;
+}
+.type-grid .type-square .square-photo-7 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/nail.png);
+  margin-bottom: 8px;
+}
+.type-grid .type-square .square-photo-8 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/Handwashing.jpg);
+  margin-bottom: 8px;
+}
+.type-grid .type-square .square-photo-9 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/feet.jpg);
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1126px) {
+  .type-grid {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.lifestyle-hero {
+  width: 100%;
+  height: 318px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/salad.jpg);
+}
+
+.lifestyle-header {
+  margin-top: 37px;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-style: italic;
+  color: #3366FF;
+  font-size: 40px;
+  text-align: center;
+}
+
+.lifestyle-grid {
+  width: 982px;
+  min-height: 200px;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 29px;
+  margin-bottom: 126px;
+}
+.lifestyle-grid .lifestyle-square {
+  width: 308px;
+  min-height: 382px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lifestyle-grid .lifestyle-square .life-square-header {
+  font-family: "Century Gothic";
+  font-size: 30px;
+  font-weight: bold;
+  color: #3366FF;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.lifestyle-grid .lifestyle-square .life-square-body {
+  font-family: "Century Gothic";
+  color: #2996EA;
+  font-size: 20px;
+  text-align: center;
+  width: 283px;
+}
+.lifestyle-grid .lifestyle-square .life-square-photo-1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/food.png);
+  margin-bottom: 8px;
+}
+.lifestyle-grid .lifestyle-square .life-square-photo-2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/sanitizer.png);
+  margin-bottom: 8px;
+}
+.lifestyle-grid .lifestyle-square .life-square-photo-3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/cleaning.jpg);
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1126px) {
+  .lifestyle-grid {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.lifestyle-drs {
+  margin-bottom: 54px;
+}
+.lifestyle-drs .dr-row {
+  width: 982px;
+  min-height: 200px;
+  display: flex;
+  margin-bottom: 46px;
+}
+.lifestyle-drs .dr-row .lifestyle-dr-photo-1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  width: 255px;
+  height: 255px;
+  background-image: url(../images/dr1.jpg);
+}
+.lifestyle-drs .dr-row .lifestyle-dr-photo-2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  width: 255px;
+  height: 255px;
+  background-image: url(../images/dr2.jpg);
+}
+.lifestyle-drs .dr-row .lifestyle-dr-text {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lifestyle-drs .dr-row .lifestyle-dr-text .lifestyle-dr-header {
+  font-family: "Century Gothic";
+  font-size: 30px;
+  font-weight: bold;
+  color: #3366FF;
+  margin-bottom: 12px;
+}
+.lifestyle-drs .dr-row .lifestyle-dr-text .lifestyle-dr-body {
+  font-family: "Century Gothic";
+  color: #2996EA;
+  font-size: 20px;
+  width: 548px;
+}
+
+@media screen and (max-width: 1126px) {
+  .lifestyle-drs {
+    width: 100%;
+  }
+  .lifestyle-drs .dr-row {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .lifestyle-drs .dr-row .lifestyle-dr-text {
+    margin: 0;
+  }
+  .lifestyle-drs .dr-row .lifestyle-dr-text .lifestyle-dr-header {
+    text-align: center;
+  }
+  .lifestyle-drs .dr-row .lifestyle-dr-text .lifestyle-dr-body {
+    text-align: center;
+  }
+}
+.menshealth-hero {
+  width: 100%;
+  height: 318px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/men.jpg);
+}
+
+.menshealth-header-top {
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-style: italic;
+  color: #3366FF;
+  font-size: 40px;
+  margin-top: 37px;
+  text-align: center;
+}
+
+.menshealth-header {
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-style: italic;
+  color: #3366FF;
+  font-size: 40px;
+  text-align: center;
+}
+
+.menshealth-body {
+  width: 982px;
+  font-family: "Century Gothic";
+  color: #2996EA;
+  font-size: 20px;
+  margin-top: 9px;
+  text-align: center;
+}
+
+.mens-grid {
+  width: 982px;
+  min-height: 200px;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 29px;
+  margin-bottom: 126px;
+}
+.mens-grid .mens-square {
+  width: 308px;
+  min-height: 382px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mens-grid .mens-square .mens-square-body {
+  font-family: "Century Gothic";
+  color: #2996EA;
+  font-size: 20px;
+  text-align: center;
+  width: 283px;
+  margin-top: 37px;
+}
+.mens-grid .mens-square .mens-square-photo-1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/toilet.jpg);
+  margin-bottom: 8px;
+}
+.mens-grid .mens-square .mens-square-photo-2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/toothbrush.jpg);
+  margin-bottom: 8px;
+}
+.mens-grid .mens-square .mens-square-photo-3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/hair.jpg);
+  margin-bottom: 8px;
+}
+.mens-grid .mens-square .mens-square-photo-4 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/shower.jpg);
+  margin-bottom: 8px;
+}
+.mens-grid .mens-square .mens-square-photo-5 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/sickness.jpg);
+  margin-bottom: 8px;
+}
+.mens-grid .mens-square .mens-square-photo-6 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/eye.jpg);
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1126px) {
+  .menshealth-header-top {
+    width: 100%;
+  }
+  .menshealth-header {
+    width: 100%;
+  }
+  .menshealth-body {
+    width: 100%;
+  }
+  .mens-grid {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.womenshealth-hero {
+  width: 100%;
+  height: 318px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/women.jpg);
+}
+
+.womenshealth-header-top {
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-style: italic;
+  color: #3366FF;
+  font-size: 40px;
+  margin-top: 37px;
+  text-align: center;
+}
+
+.womenshealth-header {
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-style: italic;
+  color: #3366FF;
+  font-size: 40px;
+  text-align: center;
+}
+
+.womenshealth-body {
+  width: 982px;
+  font-family: "Century Gothic";
+  color: #2996EA;
+  font-size: 20px;
+  margin-top: 9px;
+  text-align: center;
+}
+
+.womens-grid {
+  width: 982px;
+  min-height: 200px;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 29px;
+  margin-bottom: 126px;
+}
+.womens-grid .womens-square {
+  width: 308px;
+  min-height: 382px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.womens-grid .womens-square .womens-square-body {
+  font-family: "Century Gothic";
+  color: #2996EA;
+  font-size: 20px;
+  text-align: center;
+  width: 283px;
+  margin-top: 37px;
+}
+.womens-grid .womens-square .womens-square-photo-1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/toilet.jpg);
+  margin-bottom: 8px;
+}
+.womens-grid .womens-square .womens-square-photo-2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/toothbrush.jpg);
+  margin-bottom: 8px;
+}
+.womens-grid .womens-square .womens-square-photo-3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/hair2.jpg);
+  margin-bottom: 8px;
+}
+.womens-grid .womens-square .womens-square-photo-4 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/shower.jpg);
+  margin-bottom: 8px;
+}
+.womens-grid .womens-square .womens-square-photo-5 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/sickness.jpg);
+  margin-bottom: 8px;
+}
+.womens-grid .womens-square .womens-square-photo-6 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 224px;
+  background-image: url(../images/eye.jpg);
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1126px) {
+  .womenshealth-header-top {
+    width: 100%;
+  }
+  .womenshealth-header {
+    width: 100%;
+  }
+  .womenshealth-body {
+    width: 100%;
+  }
+  .womens-grid {
+    width: 100%;
+    justify-content: center;
+  }
+}
+footer {
+  width: 100%;
+  height: 207px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Century Gothic";
+  color: #BD78E0;
+  font-size: 15px;
+  border-top: 1px solid #BD78E0;
+}
+footer .footer-address {
+  width: 204px;
+  text-align: center;
+}
+footer .footer-copyright {
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */

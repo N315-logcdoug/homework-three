@@ -1,0 +1,68 @@
+.drs {
+    width: 982px;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 76px;
+    margin-bottom: 87px;
+
+    .dr {
+        width: 288px;
+        min-height: 481px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .dr-photo-1 {
+            @include round-img;
+            background-image: url(../images/dr1.jpg);
+            width: 288px;
+            height: 288px;
+        }
+
+        .dr-photo-2 {
+            @include round-img;
+            background-image: url(../images/dr2.jpg);
+            width: 288px;
+            height: 288px;
+        }
+
+        .dr-photo-3 {
+            @include round-img;
+            background-image: url(../images/dr3.jpg);
+            width: 288px;
+            height: 288px;
+        }
+
+        .dr-name {
+            font-family: 'Century Gothic';
+            font-size: 25px;
+            font-weight: bold;
+            color: $header-color;
+            margin-top: 21px;
+        }
+
+        .dr-email {
+            @include body-text;
+            color: $header-color;
+            font-size: 21px;
+        }
+
+        .dr-quote {
+            @include body-text;
+            text-align: center;
+            margin-top: 21px;
+        }
+    }
+}
+
+@media screen and (max-width: 1126px) { 
+    .drs {
+        flex-direction: column;
+        width: 288px;
+
+        .dr {
+            margin-bottom: 50px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: $content-width;
+    min-height: 112px;
+    display: flex;
+    border-bottom: 1px solid $footer-color;
+
+    .nav-home{
+        font-family: 'Gill Sans';
+        font-weight: bold;
+        font-style: italic;
+        color: $header-color;
+        font-size: 40px;
+        margin-top: 47px;
+    }
+
+    .nav-others {
+        font-family: 'Century Gothic';
+        font-size: 20px;
+        margin-top: 63px;
+
+        a {
+            margin-left: 68px;
+            color: $header-color;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    nav {
+        .nav-others {
+            a {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    nav {
+        .nav-home {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 170px;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    nav {
+        .nav-others {
+            font-size: 15px;
+        }
+    }
+}
